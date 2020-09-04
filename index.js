@@ -19,7 +19,7 @@ app.post('/todos', async (req, res) => {
       [description]
     );
 
-    res.json(newTodo.rows[0]);
+    res.json(newTodo.rows[0]); //do res.json(newTodo) and see the response to understand why we are doing newTodo.rows[0]
   } catch (err) {
     console.error(err.message);
   }
